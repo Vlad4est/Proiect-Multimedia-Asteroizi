@@ -1,0 +1,69 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    border: 1px solid #333;
+    background: black;
+}
+
+#game-ui {
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#game-ui span {
+    margin: 0 20px;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#playerName {
+    padding: 5px;
+    margin: 10px 0;
+    width: 200px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#highScores {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#highScores li {
+    margin: 5px 0;
+}

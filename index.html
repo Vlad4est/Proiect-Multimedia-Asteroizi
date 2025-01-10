@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asteroids Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <span>Score: <span id="score">0</span></span>
+        <span>Lives: <span id="lives">3</span></span>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="game-over">
+        <h2>Game Over!</h2>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button onclick="saveScore()">Save Score</button>
+        <h3>High Scores:</h3>
+        <ul id="highScores"></ul>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
