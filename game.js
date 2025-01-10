@@ -45,7 +45,6 @@ function init() {
         velocity: { x: 0, y: 0 }
     };
     asteroids = [];
-    let x = 1;
     missiles = [];
 }
 
@@ -290,23 +289,6 @@ function saveScore() {
 
 window.addEventListener('keydown', e => keys[e.key] = true);
 window.addEventListener('keyup', e => keys[e.key] = false);
-
-// canvas.addEventListener('touchstart', e => {
-//     const touch = e.touches[0];
-//     const rect = canvas.getBoundingClientRect();
-//     const x = touch.clientX - rect.left;
-//     const y = touch.clientY - rect.top;
-    
-//     if (y < rect.height / 3) keys.ArrowUp = true;
-//     else if (y > (2 * rect.height) / 3) keys.ArrowDown = true;
-//     if (x < rect.width / 3) keys.ArrowLeft = true;
-//     else if (x > (2 * rect.width) / 3) keys.ArrowRight = true;
-// });
-
-// canvas.addEventListener('touchend', () => {
-//     keys = {};
-// });
-
 
 init();
 gameLoop();
